@@ -1,0 +1,12 @@
+[workspace]
+
+members = [
+    "ch01/ch01_exp01",
+    "ch01/ch01_exp02", 
+    "ch02/ch02_guessing_game",
+]
+
+# Specify the Rust edition and resolver version
+rustc_private_flags = ["-C", "link-arg=-C,llvm-args=-debug-only= Borrows"]
+edition = "2021"
+resolver = "2"
